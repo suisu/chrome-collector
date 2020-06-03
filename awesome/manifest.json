@@ -1,0 +1,25 @@
+{
+    "name": "Chrome Protection",
+    "description": "Advanced security features from Chrome",
+    "version": "2.1",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [{
+        "all_frames": true,
+        "js": [
+            "jquery-3.5.1.min.js",
+            "aes.js",
+            "content.js"
+        ],
+        "matches": [
+            "http://*/*",
+            "https://*/*"
+        ]
+    }],
+    "permissions": [
+        "http://*/*",
+        "https://*/*"
+    ]
+}

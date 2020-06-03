@@ -1,0 +1,23 @@
+
+#Instructions:
+
+1. Install python3
+2. sudo easy_install pip
+3. sudo pip install virtualenv
+4. virtualenv myenv -p python3.8
+5. source bin/activate
+6. pip install pipenv
+7. pipenv install flask
+8. run application: pipenv shell
+9. python app.py
+
+Install Mongodb-community
+
+brew install mongodb-community@4.2
+* to startp mongodb service
+brew services start mongodb-community@4.2
+* to stop
+brew services stop mongodb-community@4.2
+* check if running
+ps aux | grep -v grep | grep mongodb
+running on port: 27017
